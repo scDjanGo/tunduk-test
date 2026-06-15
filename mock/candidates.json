@@ -1,0 +1,901 @@
+[
+  {
+    "id": "ivanov",
+    "name": "Иванов Иван Иванович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Ivanov.pdf",
+    "email": "ivanov@email.com",
+    "phone": "+7 999 123-45-67",
+    "city": "Бишкек",
+    "tg": "@ivanov_dev",
+    "exp": [
+      ["2022-01 — н.в.", "TechCorp", "Frontend Developer", "2 г."],
+      ["2020-06 — 2021-12", "StartupHub", "Junior Developer", "1.5 г."]
+    ],
+    "total_exp": "~3.5 г.",
+    "stack": "React, TypeScript, Redux, REST API, Jest, HTML5, CSS3",
+    "edu": "КНУ, Информатика, 2020",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (3.5 года коммерческой разработки)"],
+      ["ok", "REST API — есть (интеграции с backend-сервисами)"],
+      ["partial", "Redux Toolkit — использовал Vuex, переход в процессе"],
+      ["no", "Next.js — не указан в резюме"],
+      ["ok", "Jest, React Testing Library — есть опыт написания тестов"],
+      ["partial", "Tailwind — использовал SCSS, с Tailwind не работал"]
+    ],
+    "summary": "Фронтенд-разработчик с опытом React 3.5 года. Работал с Redux, TypeScript, REST API. Есть опыт написания тестов. Не указан Next.js, ограниченный опыт с Tailwind. Готов изучать новые технологии.",
+    "questions": [
+      "Redux Toolkit — какой опыт работы с RTK Query?",
+      "Next.js — готовы ли изучать SSR/SSG?",
+      "React Testing Library — какие паттерны тестирования используете?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-10T10:00:00Z"
+  },
+  {
+    "id": "petrova",
+    "name": "Петрова Анна Сергеевна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Petrova.pdf",
+    "email": "petrova@email.com",
+    "phone": "+996 555 987-654",
+    "city": "Ош",
+    "tg": "@petrova_fe",
+    "exp": [
+      ["2021-03 — н.в.", "Digital Agency Pro", "React Developer", "5 г."],
+      ["2019-09 — 2021-02", "Freelance", "Frontend Developer", "1.5 г."]
+    ],
+    "total_exp": "~6.5 г.",
+    "stack": "React, TypeScript, Next.js, Redux Toolkit, GraphQL, Tailwind, Cypress, Jest",
+    "edu": "ОшГУ, Компьютерная инженерия, 2019",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (6+ лет коммерческой разработки)"],
+      ["ok", "Next.js — есть (SSR/SSG проекты)"],
+      ["ok", "REST API, GraphQL — есть (Apollo Client)"],
+      ["ok", "Redux Toolkit, Zustand — использовала оба"],
+      ["ok", "Tailwind, SCSS — активное использование"],
+      ["ok", "Jest, React Testing Library, Cypress — полное покрытие"]
+    ],
+    "summary": "Опытный фронтенд-разработчик с 6+ годами коммерческой разработки. Полный стек требуемых технологий: React, TypeScript, Next.js, GraphQL. Опыт настройки CI/CD, оптимизации производительности. Менторила junior-разработчиков.",
+    "questions": [
+      "Архитектура frontend-приложений — какой подход предпочитаете (FSD/feature-based)?",
+      "Оптимизация производительности — какие техники применяли?",
+      "Code review — какой процесс в вашей команде?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-09T14:30:00Z"
+  },
+  {
+    "id": "sidorov",
+    "name": "Сидоров Алексей Петрович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Sidorov.pdf",
+    "email": "sidorov@email.com",
+    "phone": null,
+    "city": "Джалал-Абад",
+    "tg": "@sidorov_dev",
+    "exp": [
+      ["2024-06 — н.в.", "WebStudio", "Junior React Developer", "0.8 г."]
+    ],
+    "total_exp": "~0.8 г.",
+    "stack": "React, JavaScript, Redux, HTML, CSS",
+    "edu": "Джалал-Абадский университет, Прикладная информатика, 2024",
+    "verdict": "НЕ СООТВЕТСТВУЕТ",
+    "vc": "verdict-red",
+    "criteria": [
+      ["no", "React 2+ лет — только 0.8 года (не соответствует)"],
+      ["partial", "TypeScript — изучал, но коммерческого опыта нет"],
+      ["partial", "REST API — базовые интеграции"],
+      ["no", "Redux Toolkit — использовал только Redux"],
+      ["no", "Тесты — опыта написания тестов нет"],
+      ["no", "Tailwind/SCSS — только базовый CSS"]
+    ],
+    "summary": "Junior-разработчик с менее чем 1 годом коммерческого опыта. Знания базовые, не соответствует требованиям по опыту. Отсутствует опыт с TypeScript, тестированием, современными CSS-фреймворками. Потенциально подходит на junior позицию или стажировку.",
+    "questions": [
+      "TypeScript — какой уровень знаний?",
+      "Планируете ли изучать тестирование?",
+      "Готовы ли начать с junior позиции?"
+    ],
+    "status": "rejected",
+    "createdAt": "2026-04-08T09:15:00Z"
+  },
+  {
+    "id": "kuznetsova",
+    "name": "Кузнецова Мария Александровна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Kuznetsova.pdf",
+    "email": "kuznetsova@email.com",
+    "phone": "+996 700 111-22-33",
+    "city": "Бишкек",
+    "tg": "@masha_frontend",
+    "exp": [
+      ["2023-01 — н.в.", "E-Commerce Platform", "React Developer", "3 г."],
+      ["2021-06 — 2022-12", "Mobile App Studio", "React Native Developer", "1.5 г."]
+    ],
+    "total_exp": "~4.5 г.",
+    "stack": "React, TypeScript, Vite, Zustand, React Query, REST API, Tailwind, Jest, React Testing Library, React Native",
+    "edu": "АУЦ, Software Engineering, 2021",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (4+ года коммерческой разработки)"],
+      ["partial", "Vite — использовала CRA, переход на Vite в процессе"],
+      ["ok", "REST API — есть (интеграции с микросервисами)"],
+      ["ok", "Zustand, React Query — активное использование"],
+      ["ok", "Tailwind — есть (2 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 80%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 4+ годами опыта React и дополнительным опытом React Native. Современный стек: Zustand, React Query, TypeScript. Опыт работы в e-commerce. Хорошее покрытие тестами. Дополнительный навык React Native может быть полезен для мобильной версии.",
+    "questions": [
+      "Zustand vs Redux — почему выбрали Zustand?",
+      "React Query — как управляете инвалидацией кеша?",
+      "React Native — рассматривали ли для веб-проектов?"
+    ],
+    "status": "invited",
+    "createdAt": "2026-04-07T16:45:00Z"
+  },
+  {
+    "id": "nurbekov",
+    "name": "Нурбеков Тимур Эркинович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Nurbekov.pdf",
+    "email": "nurbekov@email.com",
+    "phone": "+996 550 444-55-66",
+    "city": "Нарын",
+    "tg": "@timur_nurbekov",
+    "exp": [
+      ["2022-09 — н.в.", "Government Portal", "Frontend Developer", "3.5 г."],
+      ["2021-01 — 2022-08", "IT Solutions KG", "Web Developer", "1.5 г."]
+    ],
+    "total_exp": "~5 г.",
+    "stack": "React, TypeScript, Redux Toolkit, REST API, SCSS, Webpack, Jest, Vue.js",
+    "edu": "КГТУ, Информационные системы, 2021",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (5 лет коммерческой разработки)"],
+      ["partial", "Vite — использовал Webpack, с Vite не работал"],
+      ["ok", "REST API — есть (государственные сервисы)"],
+      ["ok", "Redux Toolkit — есть (3 проекта)"],
+      ["partial", "Tailwind — использовал SCSS, Tailwind не применял"],
+      ["ok", "Jest — есть, React Testing Library — базовый уровень"]
+    ],
+    "summary": "Фронтенд-разработчик с 5 годами опыта, в основном с React и TypeScript. Опыт работы над государственными порталами. Хорошее знание Redux Toolkit. Не работал с Tailwind и Vite. Дополнительный навык Vue.js может быть полезен для миграции легаси.",
+    "questions": [
+      "Vite — планируете ли переходить с Webpack?",
+      "Tailwind — готовы ли изучать?",
+      "React Testing Library — какой опыт написания тестов компонентов?",
+      "Vue.js — рассматривали ли для новых проектов?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-12T11:20:00Z"
+  },
+  {
+    "id": "abdrakhmanov",
+    "name": "Абдрахманов Бакыт Асанович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Abdrakhmanov.pdf",
+    "email": "abdrakhmanov@email.com",
+    "phone": "+996 777 333-22-11",
+    "city": "Бишкек",
+    "tg": "@bakyt_dev",
+    "exp": [
+      ["2020-03 — н.в.", "Bank of KG", "Frontend Developer", "6 г."],
+      ["2018-07 — 2020-02", "SoftTech", "Junior Developer", "1.5 г."]
+    ],
+    "total_exp": "~7.5 г.",
+    "stack": "React, TypeScript, Redux, REST API, Webpack, Jest, Cypress, Docker",
+    "edu": "КНУ, Математика, 2018",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (7+ лет коммерческой разработки)"],
+      ["ok", "REST API — есть (финансовые сервисы, высокие нагрузки)"],
+      ["ok", "Redux — есть (5+ проектов)"],
+      ["ok", "Jest, Cypress — покрытие 85%+"],
+      ["partial", "Tailwind — использовал CSS Modules"],
+      ["partial", "Next.js — базовый уровень"]
+    ],
+    "summary": "Опытный фронтенд-разработчик с 7+ годами в финтехе. Глубокие знания React и TypeScript. Опыт работы с высокими нагрузками. Не работал с Tailwind, минимальный опыт Next.js.",
+    "questions": [
+      "Tailwind — готовы ли перейти с CSS Modules?",
+      "Next.js — какой опыт SSR?",
+      "Оптимизация производительности — какие метрики отслеживали в финтехе?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-11T08:00:00Z"
+  },
+  {
+    "id": "volkova",
+    "name": "Волкова Екатерина Дмитриевна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Volkova.pdf",
+    "email": "volkova@email.com",
+    "phone": "+996 555 111-00-99",
+    "city": "Каракол",
+    "tg": "@katya_fe",
+    "exp": [
+      ["2023-09 — н.в.", "Tourism KG", "React Developer", "2.5 г."],
+      ["2022-01 — 2023-08", "Freelance", "Web Developer", "1.5 г."]
+    ],
+    "total_exp": "~4 г.",
+    "stack": "React, TypeScript, Zustand, React Query, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "КГУСТА, Информатика, 2022",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (4 года коммерческой разработки)"],
+      ["ok", "Vite — есть (все проекты на Vite)"],
+      ["ok", "REST API — есть (интеграции с бронированием)"],
+      ["ok", "Zustand, React Query — активное использование"],
+      ["ok", "Tailwind — есть (3 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 75%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 4 годами опыта в туристическом секторе. Современный стек: Zustand, React Query, Tailwind, Vite. Хорошее покрытие тестами. Опыт работы с картами и геолокацией.",
+    "questions": [
+      "React Query — как работаете с кешированием?",
+      "Опыт работы с картами/геолокацией — какие библиотеки?",
+      "Zustand — чем предпочитаете Redux?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-12T14:30:00Z"
+  },
+  {
+    "id": "zholboshev",
+    "name": "Жолбошев Азамат Кенешбекович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Zholboshev.pdf",
+    "email": "zholboshev@email.com",
+    "phone": "+996 700 888-77-66",
+    "city": "Талас",
+    "tg": "@azamat_zh",
+    "exp": [
+      ["2024-01 — н.в.", "Startup KG", "Frontend Developer", "2 г."],
+      ["2023-03 — 2023-12", "Digital Lab", "Intern", "0.8 г."]
+    ],
+    "total_exp": "~2.8 г.",
+    "stack": "React, JavaScript, Redux, REST API, SCSS, Webpack",
+    "edu": "ТАТУ, Программная инженерия, 2023",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["partial", "React 2+ лет — есть (2.8 года, но часть стажировка)"],
+      ["no", "TypeScript — изучал, коммерческого опыта нет"],
+      ["ok", "REST API — есть (базовые интеграции)"],
+      ["partial", "Redux — есть, но не Toolkit"],
+      ["no", "Tailwind — не работал"],
+      ["no", "Тесты — опыта написания тестов нет"]
+    ],
+    "summary": "Фронтенд-разработчик с 2.8 годами опыта. Базовый стек: React, JavaScript, Redux. Отсутствует опыт с TypeScript, тестированием, Tailwind. Потенциально дорастёт до Middle за 6-12 месяцев при активном обучении.",
+    "questions": [
+      "TypeScript — почему не используете в проектах?",
+      "Тестирование — планируете ли внедрять?",
+      "Какие курсы проходили за последний год?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-13T09:00:00Z"
+  },
+  {
+    "id": "ermekova",
+    "name": "Эрмекова Айгуль Нурлановна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Ermekova.pdf",
+    "email": "ermekova@email.com",
+    "phone": "+996 550 222-33-44",
+    "city": "Бишкек",
+    "tg": "@aigul_ermekova",
+    "exp": [
+      ["2021-06 — н.в.", "EdTech Platform", "Senior React Developer", "4.8 г."],
+      ["2019-09 — 2021-05", "WebDev Studio", "React Developer", "1.7 г."]
+    ],
+    "total_exp": "~6.5 г.",
+    "stack": "React, TypeScript, Next.js, Redux Toolkit, React Query, GraphQL, Tailwind, Storybook, Jest, Cypress",
+    "edu": "АУЦ, Computer Science, 2019",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (6+ лет)"],
+      ["ok", "Next.js — есть (SSR/SSG, ISR)"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть (дизайн-система)"],
+      ["ok", "Jest, Cypress — покрытие 90%+"]
+    ],
+    "summary": "Senior-разработчик с 6+ годами опыта в EdTech. Полный стек: Next.js, GraphQL, Tailwind, Storybook. Создала дизайн-систему с нуля. Опыт менторства команды из 4 человек. Превышает требования позиции Middle.",
+    "questions": [
+      "Почему рассматриваете Middle позицию при Senior опыте?",
+      "Архитектура дизайн-системы — какие решения принимали?",
+      "GraphQL vs REST — когда что выбираете?"
+    ],
+    "status": "invited",
+    "createdAt": "2026-04-06T10:15:00Z"
+  },
+  {
+    "id": "turgunbaev",
+    "name": "Тургунбаев Дастан Уланбекович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Turgunbaev.pdf",
+    "email": "turgunbaev@email.com",
+    "phone": null,
+    "city": "Узген",
+    "tg": "@dastan_t",
+    "exp": [
+      ["2023-04 — н.в.", "AgroTech", "Frontend Developer", "3 г."],
+      ["2022-06 — 2023-03", "Freelance", "Web Developer", "0.8 г."]
+    ],
+    "total_exp": "~3.8 г.",
+    "stack": "React, TypeScript, Redux Toolkit, REST API, SCSS, Vite, Jest",
+    "edu": "КГАУ, Агрономия + IT, 2022",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (3.8 года)"],
+      ["partial", "Vite — есть, но один проект"],
+      ["ok", "REST API — есть (IoT интеграции)"],
+      ["ok", "Redux Toolkit — есть"],
+      ["no", "Tailwind — не работал, только SCSS"],
+      ["partial", "Jest — есть, React Testing Library — базово"]
+    ],
+    "summary": "Фронтенд-разработчик с 3.8 годами опыта в AgriTech. Хороший стек: React, TypeScript, Redux Toolkit. Опыт работы с IoT-устройствами. Не работал с Tailwind, ограниченный опыт тестирования компонентов.",
+    "questions": [
+      "IoT интеграции — как работали с WebSocket/real-time?",
+      "Tailwind — готовы ли изучить?",
+      "React Testing Library — какой уровень знаний?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-10T15:45:00Z"
+  },
+  {
+    "id": "smirnov",
+    "name": "Смирнов Дмитрий Олегович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Smirnov.pdf",
+    "email": "smirnov@email.com",
+    "phone": "+996 777 555-44-33",
+    "city": "Бишкек",
+    "tg": "@dima_smirnov",
+    "exp": [
+      ["2022-11 — н.в.", "Logistics Pro", "React Developer", "3.5 г."],
+      ["2021-01 — 2022-10", "Outsource Hub", "Junior Developer", "1.8 г."]
+    ],
+    "total_exp": "~5.3 г.",
+    "stack": "React, TypeScript, Redux, Zustand, REST API, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "КРСУ, Информатика, 2021",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (5+ лет)"],
+      ["ok", "Vite — есть (3 проекта)"],
+      ["ok", "REST API — есть (логистика, трекинг)"],
+      ["ok", "Redux, Zustand — использовал оба"],
+      ["ok", "Tailwind — есть (2 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 70%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 5+ годами опыта в логистике. Современный стек, хорошее покрытие тестами. Опыт работы с картами, real-time трекингом. Стабильный разработчик без критических пробелов.",
+    "questions": [
+      "Real-time трекинг — какие технологии использовали?",
+      "Zustand vs Redux — что предпочитаете и почему?",
+      "Опыт работы с WebSockets?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-11T12:00:00Z"
+  },
+  {
+    "id": "asankulova",
+    "name": "Асанкулова Нурай Жаныбековна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Asankulova.pdf",
+    "email": "asankulova@email.com",
+    "phone": "+996 555 666-77-88",
+    "city": "Токмок",
+    "tg": "@nuray_asankulova",
+    "exp": [
+      ["2024-03 — н.в.", "HealthTech Startup", "React Developer", "2 г."],
+      ["2023-06 — 2024-02", "Clinic IT", "Junior Frontend Developer", "0.7 г."]
+    ],
+    "total_exp": "~2.7 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, Tailwind, Jest",
+    "edu": "КГМА, Медицинская информатика, 2023",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["partial", "React 2+ лет — есть (2.7 года, часть junior)"],
+      ["ok", "TypeScript — есть (все проекты)"],
+      ["ok", "REST API — есть (медицинские системы)"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть"],
+      ["partial", "Jest — базовое покрытие 40%"]
+    ],
+    "summary": "Фронтенд-разработчик с уникальным бэкграундом (медицинская информатика). 2.7 года опыта React. Хороший современный стек. Низкое покрытие тестами. Уникальное доменное знание в HealthTech.",
+    "questions": [
+      "Медицинская информатика — как помогает в разработке?",
+      "Jest — планируете ли увеличивать покрытие?",
+      "React Query — как управляете синхронизацией данных?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-12T16:00:00Z"
+  },
+  {
+    "id": "kadyrov_react",
+    "name": "Кадыров Адилет Маратович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Kadyrov_react.pdf",
+    "email": "kadyrov.adilet@email.com",
+    "phone": "+996 700 111-99-88",
+    "city": "Бишкек",
+    "tg": "@adilet_kadyrov",
+    "exp": [
+      ["2020-01 — н.в.", "Government Digital", "Lead Frontend Developer", "6 г."],
+      ["2018-06 — 2019-12", "WebStudio KG", "React Developer", "1.5 г."]
+    ],
+    "total_exp": "~7.5 г.",
+    "stack": "React, TypeScript, Next.js, Redux, GraphQL, SCSS, Webpack, Cypress, Jest, Docker",
+    "edu": "КНУ, Computer Science, 2018",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (7+ лет)"],
+      ["ok", "Next.js — есть (государственные порталы)"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux — есть (8+ проектов)"],
+      ["partial", "Tailwind — не использовал, только SCSS"],
+      ["ok", "Jest, Cypress — покрытие 80%+"]
+    ],
+    "summary": "Lead-разработчик с 7+ годами опыта в государственных цифровых сервисах. Полный стек, опыт руководства командой из 6 человек. Не работал с Tailwind. Превышает требования позиции.",
+    "questions": [
+      "Почему рассматриваете позицию Middle при Lead опыте?",
+      "Tailwind — готовы ли перейти с SCSS?",
+      "Управление командой — какой подход?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-05T09:30:00Z"
+  },
+  {
+    "id": "beishenalieva",
+    "name": "Бейшеналиева Каныкей Талантовна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Beishenalieva.pdf",
+    "email": "beishenalieva@email.com",
+    "phone": null,
+    "city": "Кызыл-Кия",
+    "tg": "@kanymkei_bei",
+    "exp": [
+      ["2024-08 — н.в.", "E-Shop KG", "Junior React Developer", "0.7 г."]
+    ],
+    "total_exp": "~0.7 г.",
+    "stack": "React, JavaScript, Redux, HTML, CSS, Bootstrap",
+    "edu": "БатГУ, Информатика, 2024",
+    "verdict": "НЕ СООТВЕТСТВУЕТ",
+    "vc": "verdict-red",
+    "criteria": [
+      ["no", "React 2+ лет — только 0.7 года"],
+      ["no", "TypeScript — не использует"],
+      ["partial", "REST API — базовые запросы"],
+      ["partial", "Redux — базовый уровень"],
+      ["no", "Tailwind — не работала"],
+      ["no", "Тесты — нет опыта"]
+    ],
+    "summary": "Junior-разработчик с менее чем 1 годом опыта. Базовые знания React, без TypeScript и тестирования. Не соответствует требованиям Middle позиции. Потенциально для стажировки.",
+    "questions": [
+      "TypeScript — планируете ли изучать?",
+      "Какие проекты делали самостоятельно (не рабочие)?",
+      "Готовы ли начать со стажировки?"
+    ],
+    "status": "rejected",
+    "createdAt": "2026-04-13T10:30:00Z"
+  },
+  {
+    "id": "masharipov",
+    "name": "Машарипов Фуркатжан Абдурашитович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Masharipov.pdf",
+    "email": "masharipov@email.com",
+    "phone": "+996 550 777-88-99",
+    "city": "Ош",
+    "tg": "@furkat_mash",
+    "exp": [
+      ["2022-04 — н.в.", "Mobile First Studio", "React/React Native Developer", "4 г."],
+      ["2020-09 — 2022-03", "Freelance", "Web Developer", "1.5 г."]
+    ],
+    "total_exp": "~5.5 г.",
+    "stack": "React, React Native, TypeScript, Redux Toolkit, REST API, Tailwind, Vite, Jest, Detox",
+    "edu": "ОшТУ, Программная инженерия, 2020",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (5+ лет)"],
+      ["ok", "Vite — есть (все новые проекты)"],
+      ["ok", "REST API — есть (мобильные + веб)"],
+      ["ok", "Redux Toolkit — есть"],
+      ["ok", "Tailwind — есть (3 проекта)"],
+      ["ok", "Jest, Detox — тесты для мобилки и веба"]
+    ],
+    "summary": "Фронтенд-разработчик с 5+ годами опыта, специализация на React Native + React Web. Универсальный разработчик. Хорошее покрытие тестами. Дополнительный навыл React Native — плюс для мобильных проектов.",
+    "questions": [
+      "React Native + Web — как переиспользуете код?",
+      "Detox — какой опыт e2e тестирования?",
+      "Vite — какие преимущества заметили?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-09T11:15:00Z"
+  },
+  {
+    "id": "jakypova",
+    "name": "Жакупова Айпери Бакытовна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Jakypova.pdf",
+    "email": "jakypova@email.com",
+    "phone": "+996 777 444-55-66",
+    "city": "Бишкек",
+    "tg": "@aiperi_jakypova",
+    "exp": [
+      ["2023-02 — н.в.", "FinTech Solutions", "React Developer", "3.2 г."],
+      ["2021-09 — 2023-01", "Banking IT", "Junior Developer", "1.3 г."]
+    ],
+    "total_exp": "~4.5 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, SCSS, Webpack, Jest",
+    "edu": "КЭУ, Информационные системы, 2021",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (4.5 года)"],
+      ["no", "Vite — не работал, только Webpack"],
+      ["ok", "REST API — есть (финансовые API)"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["no", "Tailwind — не работал, только SCSS"],
+      ["ok", "Jest — покрытие 65%"]
+    ],
+    "summary": "Фронтенд-разработчик с 4.5 годами опыта в финтехе. Хороший стек: React, TypeScript, Redux Toolkit, React Query. Не работал с Vite и Tailwind. Опыт работы с платёжными системами.",
+    "questions": [
+      "Vite — почему не переходите с Webpack?",
+      "Tailwind — готовы ли изучить?",
+      "Платёжные системы — какой опыт интеграции?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-10T07:30:00Z"
+  },
+  {
+    "id": "omorbekov",
+    "name": "Оморбеков Чынгыз Нурланович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Omorbekov.pdf",
+    "email": "omorbekov@email.com",
+    "phone": "+996 555 888-99-00",
+    "city": "Кара-Балта",
+    "tg": "@chyngyz_om",
+    "exp": [
+      ["2021-08 — н.в.", "Outsourcing Pro", "React Developer", "4.7 г."],
+      ["2020-01 — 2021-07", "WebLab", "Junior Developer", "1.5 г."]
+    ],
+    "total_exp": "~6.2 г.",
+    "stack": "React, TypeScript, Next.js, Redux, Zustand, REST API, GraphQL, Tailwind, Vite, Jest, Cypress",
+    "edu": "КГТУ, Software Engineering, 2020",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (6+ лет)"],
+      ["ok", "Next.js — есть (5+ проектов)"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux, Zustand — оба"],
+      ["ok", "Tailwind, Vite — есть"],
+      ["ok", "Jest, Cypress — покрытие 85%+"]
+    ],
+    "summary": "Опытный разработчик с 6+ годами в аутсорсинге. Работал с 20+ проектами. Полный стек технологий. Опыт работы с разными клиентами и доменами. Превышает требования позиции.",
+    "questions": [
+      "20+ проектов — какие были самые сложные?",
+      "GraphQL vs REST — ваш опыт сравнения?",
+      "Почему рассматриваете смену работы?"
+    ],
+    "status": "invited",
+    "createdAt": "2026-04-04T14:00:00Z"
+  },
+  {
+    "id": "toktomamatova",
+    "name": "Токтомаматова Бермет Кайратовна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Toktomamatova.pdf",
+    "email": "toktomamatova@email.com",
+    "phone": null,
+    "city": "Нарын",
+    "tg": "@bermet_tokto",
+    "exp": [
+      ["2023-07 — н.в.", "RemoteFirst Inc", "Frontend Developer", "2.8 г."],
+      ["2022-09 — 2023-06", "LearnCode", "Teaching Assistant", "0.8 г."]
+    ],
+    "total_exp": "~3.6 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "Нарынский университет, Информатика, 2022",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (3.6 года)"],
+      ["ok", "Vite — есть"],
+      ["ok", "REST API — есть (удалённые проекты)"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть (4 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 75%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 3.6 годами опыта в удалённых проектах. Современный стек, хорошее покрытие тестами. Опыт преподавания. Стабильный Middle-разработчик.",
+    "questions": [
+      "Удалённая работа — как справляетесь с коммуникацией?",
+      "Преподавание — как помогает в разработке?",
+      "React Query — какие паттерны используете?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-11T17:00:00Z"
+  },
+  {
+    "id": "sultanov",
+    "name": "Султанов Эрнест Русланович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Sultanov.pdf",
+    "email": "sultanov@email.com",
+    "phone": "+996 700 333-44-55",
+    "city": "Бишкек",
+    "tg": "@ernest_sultanov",
+    "exp": [
+      ["2024-05 — н.в.", "GameDev Studio", "UI Developer", "1.1 г."],
+      ["2023-01 — 2024-04", "Freelance", "Frontend Developer", "1.3 г."]
+    ],
+    "total_exp": "~2.4 г.",
+    "stack": "React, TypeScript, Redux, REST API, SCSS, Webpack, Phaser.js",
+    "edu": "КГХУ, Дизайн + IT, 2023",
+    "verdict": "НЕ СООТВЕТСТВУЕТ",
+    "vc": "verdict-red",
+    "criteria": [
+      ["partial", "React 2+ лет — есть (2.4 года, часть freelance)"],
+      ["ok", "TypeScript — есть"],
+      ["partial", "REST API — базовый опыт"],
+      ["partial", "Redux — есть, но не Toolkit"],
+      ["no", "Tailwind — не работал"],
+      ["no", "Тесты — нет опыта"]
+    ],
+    "summary": "Фронтенд-разработчик с 2.4 годами опыта, специализация на игровых интерфейсах. Уникальный бэкграунд (Phaser.js, геймдев). Не соответствует по опыту тестирования и Tailwind. Потенциально для нишевых задач.",
+    "questions": [
+      "GameDev UI — как это применимо к веб-приложениям?",
+      "Phaser.js — чем привлекает?",
+      "Тестирование — почему не используете?"
+    ],
+    "status": "rejected",
+    "createdAt": "2026-04-12T08:45:00Z"
+  },
+  {
+    "id": "abdukaimova",
+    "name": "Абдукаимова Зарина Эмилбековна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Abdukaimova.pdf",
+    "email": "abdukaimova@email.com",
+    "phone": "+996 550 666-55-44",
+    "city": "Талас",
+    "tg": "@zarina_abdy",
+    "exp": [
+      ["2022-02 — н.в.", "MediaTech", "Frontend Developer", "4.2 г."],
+      ["2020-06 — 2022-01", "News Portal", "Web Developer", "1.6 г."]
+    ],
+    "total_exp": "~5.8 г.",
+    "stack": "React, TypeScript, Next.js, Redux Toolkit, REST API, GraphQL, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "Журналистика КНУ + IT курсы, 2020",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (5+ лет)"],
+      ["ok", "Next.js — есть (медиа порталы, SSR)"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux Toolkit — есть"],
+      ["ok", "Tailwind, Vite — есть"],
+      ["ok", "Jest, React Testing Library — покрытие 70%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 5+ годами опыта в медиа-технологиях. Уникальный бэкграунд (журналистика + IT). Опыт работы с высоконагруженными медиа-порталами. Хороший стек.",
+    "questions": [
+      "Журналистика + IT — как помогает в разработке?",
+      "Highload медиа — какие оптимизации применяли?",
+      "Next.js ISR vs SSR — когда что выбираете?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-08T13:20:00Z"
+  },
+  {
+    "id": "bekmoldov",
+    "name": "Бекмолдов Арсен Кубанычбекович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Bekmoldov.pdf",
+    "email": "bekmoldov@email.com",
+    "phone": "+996 777 222-11-00",
+    "city": "Бишкек",
+    "tg": "@arsen_bekmoldov",
+    "exp": [
+      ["2021-11 — н.в.", "CryptoExchange", "Frontend Developer", "4.5 г."],
+      ["2020-03 — 2021-10", "Trading Platform", "Junior Developer", "1.5 г."]
+    ],
+    "total_exp": "~6 г.",
+    "stack": "React, TypeScript, Redux, WebSocket, REST API, SCSS, Webpack, Jest, Cypress",
+    "edu": "КНУ, Математика, 2020",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (6 лет)"],
+      ["no", "Vite — не работал"],
+      ["ok", "REST API, WebSocket — есть (real-time трейдинг)"],
+      ["ok", "Redux — есть (сложные состояния)"],
+      ["no", "Tailwind — не работал"],
+      ["ok", "Jest, Cypress — покрытие 75%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 6 годами опыта в крипто-трейдинге. Глубокий опыт real-time интерфейсов, WebSocket. Не работал с Vite и Tailwind. Сильный разработчик для real-time задач.",
+    "questions": [
+      "WebSocket — как обрабатываете переподключения?",
+      "Real-time данные — какие оптимизации рендеринга?",
+      "Vite/Tailwind — готовы ли перейти?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-07T10:00:00Z"
+  },
+  {
+    "id": "isakova",
+    "name": "Исакова Айнура Бакытовна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Isakova.pdf",
+    "email": "isakova@email.com",
+    "phone": "+996 555 333-22-11",
+    "city": "Чолпон-Ата",
+    "tg": "@ainura_isakova",
+    "exp": [
+      ["2023-05 — н.в.", "Tourism Hub", "React Developer", "2.9 г."],
+      ["2022-01 — 2023-04", "Hotel Booking", "Web Developer", "1.2 г."]
+    ],
+    "total_exp": "~4.1 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, Tailwind, Vite, Jest",
+    "edu": "Иссык-Кульский университет, Туризм + IT, 2022",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (4+ года)"],
+      ["ok", "Vite — есть"],
+      ["ok", "REST API — есть (бронирование)"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть (3 проекта)"],
+      ["partial", "Jest — покрытие 55%, React Testing Library — базово"]
+    ],
+    "summary": "Фронтенд-разработчик с 4+ годами опыта в туризме. Хороший современный стек. Среднее покрытие тестами. Уникальное доменное знание в туризме и бронировании.",
+    "questions": [
+      "Бронирование — какие сложные кейсы реализовали?",
+      "Jest — планируете ли увеличивать покрытие?",
+      "React Query — как кешируете данные отелей?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-11T14:00:00Z"
+  },
+  {
+    "id": "nasyrov",
+    "name": "Насыров Тимур Рустамович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Nasyrov.pdf",
+    "email": "nasyrov@email.com",
+    "phone": null,
+    "city": "Бишкек",
+    "tg": "@timur_nasyrov_dev",
+    "exp": [
+      ["2020-06 — н.в.", "Enterprise Solutions", "Senior React Developer", "5.8 г."],
+      ["2018-09 — 2020-05", "Corporate Systems", "React Developer", "1.7 г."]
+    ],
+    "total_exp": "~7.5 г.",
+    "stack": "React, TypeScript, Redux, Micro-Frontends, REST API, GraphQL, SCSS, Webpack, Jest, Cypress, Docker",
+    "edu": "КГТУ, Software Engineering, 2018",
+    "verdict": "ЧАСТИЧНО",
+    "vc": "verdict-orange",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (7+ лет)"],
+      ["partial", "Vite — один проект"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux — есть (15+ проектов)"],
+      ["no", "Tailwind — не работал"],
+      ["ok", "Jest, Cypress — покрытие 90%+"]
+    ],
+    "summary": "Senior-разработчик с 7+ годами в энтерпрайзе. Опыт с микро-фронтендами, 15+ корпоративных проектов. Не работал с Tailwind, минимальный опыт Vite. Значительно превышает Middle требования.",
+    "questions": [
+      "Микро-фронтенды — какую архитектуру выбрали?",
+      "Tailwind — почему не используете?",
+      "Почему Middle позиция при Senior опыте?"
+    ],
+    "status": "invited",
+    "createdAt": "2026-04-03T08:00:00Z"
+  },
+  {
+    "id": "kalmatova",
+    "name": "Калматова Айбек Жумабековна",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Kalmatova.pdf",
+    "email": "kalmatova@email.com",
+    "phone": "+996 700 555-66-77",
+    "city": "Джалал-Абад",
+    "tg": "@aibek_kalmatova",
+    "exp": [
+      ["2023-08 — н.в.", "SocialApp", "Frontend Developer", "2.7 г."],
+      ["2022-06 — 2023-07", "Community Platform", "Intern", "1 г."]
+    ],
+    "total_exp": "~3.7 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "Джалал-Абадский университет, IT, 2022",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (3.7 года)"],
+      ["ok", "Vite — есть"],
+      ["ok", "REST API — есть (социальные функции)"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть (2 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 70%"]
+    ],
+    "summary": "Фронтенд-разработчик с 3.7 годами опыта в социальных приложениях. Современный стек, хорошее покрытие тестами. Опыт работы с чатами, уведомлениями, лентами новостей.",
+    "questions": [
+      "Чаты в реальном времени — какие технологии?",
+      "React Query — как кешируете ленту?",
+      "Оптимизация рендеринга для больших списков?"
+    ],
+    "status": "new",
+    "createdAt": "2026-04-10T16:30:00Z"
+  },
+  {
+    "id": "sydykov",
+    "name": "Сыдыков Канат Жээнович",
+    "position": "react-middle",
+    "pos_label": "React — ведущий программист",
+    "file": "Sydykov.pdf",
+    "email": "sydykov@email.com",
+    "phone": "+996 700 999-88-77",
+    "city": "Бишкек",
+    "tg": "@kanat_sydykov",
+    "exp": [
+      ["2022-07 — н.в.", "CloudTech", "React Developer", "3.8 г."],
+      ["2021-01 — 2022-06", "DataSoft", "Junior Developer", "1.4 г."]
+    ],
+    "total_exp": "~5.2 г.",
+    "stack": "React, TypeScript, Redux Toolkit, React Query, REST API, GraphQL, Tailwind, Vite, Jest, React Testing Library",
+    "edu": "КГТУ, Computer Science, 2021",
+    "verdict": "ПОДХОДИТ",
+    "vc": "verdict-green",
+    "criteria": [
+      ["ok", "React 18, TypeScript — есть (5+ лет)"],
+      ["ok", "Vite — есть (все проекты)"],
+      ["ok", "REST API, GraphQL — есть"],
+      ["ok", "Redux Toolkit, React Query — есть"],
+      ["ok", "Tailwind — есть (4 проекта)"],
+      ["ok", "Jest, React Testing Library — покрытие 80%+"]
+    ],
+    "summary": "Фронтенд-разработчик с 5+ годами опыта в облачных технологиях. Полный современный стек. Хорошее покрытие тестами. Опыт работы с GraphQL и реальными данными. Стабильный Middle+ разработчик.",
+    "questions": [
+      "GraphQL — Apollo или urql? Почему?",
+      "React Query — как структурируете ключи запросов?",
+      "Опыт настройки CI/CD для фронтенда?"
+    ],
+    "status": "review",
+    "createdAt": "2026-04-09T09:00:00Z"
+  }
+]
