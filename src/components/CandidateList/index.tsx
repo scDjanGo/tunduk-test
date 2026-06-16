@@ -22,6 +22,13 @@ const OVERSCAN = 10
 
 export function CandidateList({ candidates, loading }: CandidateListProps) {
   const scrollRef = useRef<HTMLDivElement>(null)
+  /**
+   * `useVirtualizer()` returns functions that React Compiler can't safely
+   * memoize, so it flags this hook call. That's fine here — the result is
+   * only read locally below, never passed into a memoized child, so there's
+   * no stale-UI risk to guard against.
+   */
+  // eslint-disable-next-line react-hooks/incompatible-library
   const rowVirtualizer = useVirtualizer({
     count: candidates.length,
     getScrollElement: () => scrollRef.current,
