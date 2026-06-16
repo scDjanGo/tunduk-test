@@ -1,6 +1,12 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { CandidatesPage } from './pages/CandidatesPage'
-import { CandidateDetailPage } from './pages/CandidateDetailPage'
+import { lazy } from 'react'
+
+const CandidatesPage = lazy(() =>
+  import("./pages/CandidatesPage").then(module => ({ default: module.CandidatesPage }))
+)
+// import { CandidatesPage } from './pages/CandidatesPage'
+const  CandidateDetailPage  = lazy(() => import('./pages/CandidateDetailPage').then(module =>({default: module.CandidateDetailPage})))
+// import { CandidateDetailPage } from './pages/CandidateDetailPage'
 
 export function AppRoutes() {
   return (
