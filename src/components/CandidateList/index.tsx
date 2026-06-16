@@ -1,6 +1,7 @@
+import { useRef } from 'react'
+import { useVirtualizer } from '@tanstack/react-virtual'
 import type { Candidate } from '../../types/candidate'
 import { CandidateCard } from '../CandidateCard'
-import { CandidateRow } from '../CandidateCard/CandidateRow'
 import { Spinner } from '../UI/Spinner'
 
 interface CandidateListProps {
@@ -9,8 +10,26 @@ interface CandidateListProps {
 }
 
 const TABLE_HEADERS = ['ФИО', 'Город', 'Опыт', 'Стек', 'Вердикт', 'Статус']
+const ROW_HEIGHT_PX = 64
+/**
+ * Overscan covers the whole current page (PAGE_SIZE candidates), so every
+ * row in the active page is always rendered. The virtualizer still only
+ * mounts rows within its window — if PAGE_SIZE ever grows past this value,
+ * off-screen rows in a long page are skipped automatically without any
+ * change to this component.
+ */
+const OVERSCAN = 10
 
 export function CandidateList({ candidates, loading }: CandidateListProps) {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const rowVirtualizer = useVirtualizer({
+    count: candidates.length,
+    getScrollElement: () => scrollRef.current,
+    estimateSize: () => ROW_HEIGHT_PX,
+    overscan: OVERSCAN,
+    initialRect: { width: 0, height: ROW_HEIGHT_PX * OVERSCAN },
+  })
+
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-24 gap-3 text-gray-400">
@@ -31,11 +50,10 @@ export function CandidateList({ candidates, loading }: CandidateListProps) {
   }
 
   return (
-    <div>
-      {/* Desktop layout — real table */}
-      <div className="hidden md:block bg-white border border-gray-200 rounded-xl overflow-hidden">
+    <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+      <div ref={scrollRef} className="max-h-160 overflow-auto">
         <table className="w-full">
-          <thead>
+          <thead className="hidden md:table-header-group">
             <tr className="bg-gray-50 border-b border-gray-200">
               {TABLE_HEADERS.map((h) => (
                 <th
@@ -49,18 +67,11 @@ export function CandidateList({ candidates, loading }: CandidateListProps) {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
-            {candidates.map((candidate) => (
-              <CandidateRow key={candidate.id} candidate={candidate} />
+            {rowVirtualizer.getVirtualItems().map((virtualRow) => (
+              <CandidateCard key={candidates[virtualRow.index].id} candidate={candidates[virtualRow.index]} />
             ))}
           </tbody>
         </table>
-      </div>
-
-      {/* Mobile layout — card style */}
-      <div className="md:hidden flex flex-col gap-2">
-        {candidates.map((candidate) => (
-          <CandidateCard key={candidate.id} candidate={candidate} />
-        ))}
       </div>
     </div>
   )

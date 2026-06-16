@@ -1,11 +1,11 @@
-import type { Candidate, CandidateStatus } from '../types/candidate'
-import { candidatesData } from './mockData'
+import type { Candidate, CandidateStatus, Dataset } from '../types/candidate'
+import { candidatesData, candidatesLargeData } from './mockData'
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
-export const fetchCandidates = async (): Promise<Candidate[]> => {
+export const fetchCandidates = async (dataset: Dataset = 'small'): Promise<Candidate[]> => {
   await delay(500)
-  return candidatesData
+  return dataset === 'large' ? candidatesLargeData : candidatesData
 }
 
 export const patchCandidateStatus = async (

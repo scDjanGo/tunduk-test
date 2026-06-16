@@ -15,7 +15,12 @@ export function CandidateDetailPage() {
   const filtersForUrl = useAppSelector(selectFiltersForUrl)
   const dispatched = useRef(false)
 
-  // Load candidates if navigated directly to this URL
+  /**
+   * Candidates may not be loaded yet if the user opens this URL directly
+   * (deep link, page refresh) instead of navigating from the list page.
+   * `dispatched` prevents re-dispatching on every render while still
+   * allowing a real reload after a genuine dataset change clears `candidate`.
+   */
   useEffect(() => {
     if (!dispatched.current && !candidate) {
       dispatched.current = true

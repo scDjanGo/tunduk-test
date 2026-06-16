@@ -24,8 +24,3 @@ export const statusBadgeClasses: Record<CandidateStatus, string> = {
   invited: 'bg-emerald-100 text-emerald-700',
   rejected: 'bg-red-100 text-red-600',
 }
-
-export const parseExpYears = (exp: string): number => {
-  const match = exp.match(/[\d.]+/)
-  return match ? parseFloat(match[0]) : 0
-}

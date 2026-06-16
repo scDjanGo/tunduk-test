@@ -13,6 +13,8 @@ export type SortDirection = 'asc' | 'desc'
 
 export type VerdictFilter = 'ALL' | Verdict
 
+export type Dataset = 'small' | 'large'
+
 export interface Candidate {
   id: string
   name: string

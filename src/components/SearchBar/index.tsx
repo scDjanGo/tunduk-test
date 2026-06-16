@@ -15,7 +15,12 @@ export function SearchBar() {
     dispatch(setSearch(debouncedSearch))
   }, [debouncedSearch, dispatch])
 
-  // Sync from store when value changes externally (URL init, reset)
+  /**
+   * Keeps the input in sync when the search term changes from outside this
+   * component (URL parsing on mount, "Сбросить фильтры"). Guarded by
+   * `lastDispatched` so the debounce-driven dispatch above doesn't loop
+   * back and reset the user's in-progress typing.
+   */
   useEffect(() => {
     if (storeSearch !== lastDispatched.current) {
       setLocalSearch(storeSearch)

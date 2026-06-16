@@ -12,7 +12,6 @@ export function FilterPanel() {
 
   return (
     <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-      {/* Verdict filter */}
       <div className="flex flex-wrap gap-1.5" role="group" aria-label="Фильтр по вердикту">
         {VERDICTS.map((v) => (
           <button
@@ -30,7 +29,6 @@ export function FilterPanel() {
         ))}
       </div>
 
-      {/* Sort */}
       <div className="flex gap-1.5 sm:ml-auto" role="group" aria-label="Сортировка">
         <span className="text-xs text-gray-400 self-center hidden sm:inline">Сортировка:</span>
         {SORT_FIELDS.map((field) => (

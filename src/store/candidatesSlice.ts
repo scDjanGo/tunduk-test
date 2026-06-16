@@ -1,11 +1,13 @@
 import { createSlice, createAsyncThunk, createSelector } from '@reduxjs/toolkit'
-import type { Candidate, CandidateStatus } from '../types/candidate'
+import type { PayloadAction } from '@reduxjs/toolkit'
+import type { Candidate, CandidateStatus, Dataset } from '../types/candidate'
 import { PAGE_SIZE } from '../types/candidate'
 import { fetchCandidates, patchCandidateStatus } from '../services/api'
 import type { RootState } from './store'
 
 interface CandidatesState {
   items: Candidate[]
+  dataset: Dataset
   loaded: boolean
   loading: boolean
   error: string | null
@@ -15,6 +17,7 @@ interface CandidatesState {
 
 const initialState: CandidatesState = {
   items: [],
+  dataset: 'small',
   loaded: false,
   loading: false,
   error: null,
@@ -22,7 +25,9 @@ const initialState: CandidatesState = {
   pendingStatus: null,
 }
 
-export const loadCandidates = createAsyncThunk('candidates/load', fetchCandidates)
+export const loadCandidates = createAsyncThunk('candidates/load', (_: void, { getState }) =>
+  fetchCandidates((getState() as RootState).candidates.dataset),
+)
 
 export const updateCandidateStatus = createAsyncThunk<
   { id: string; status: CandidateStatus },
@@ -41,7 +46,14 @@ export const updateCandidateStatus = createAsyncThunk<
 const candidatesSlice = createSlice({
   name: 'candidates',
   initialState,
-  reducers: {},
+  reducers: {
+    setDataset(state, { payload }: PayloadAction<Dataset>) {
+      if (state.dataset === payload) return
+      state.dataset = payload
+      state.loaded = false
+      state.items = []
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(loadCandidates.pending, (state) => {
@@ -55,6 +67,7 @@ const candidatesSlice = createSlice({
       })
       .addCase(loadCandidates.rejected, (state, { error }) => {
         state.loading = false
+        state.loaded = true
         state.error = error.message ?? 'Ошибка загрузки данных'
       })
 
@@ -80,11 +93,14 @@ const candidatesSlice = createSlice({
   },
 })
 
+export const { setDataset } = candidatesSlice.actions
+
 export default candidatesSlice.reducer
 
 // --- Base selectors ---
 
 export const selectCandidatesLoaded = (state: RootState) => state.candidates.loaded
+export const selectDataset = (state: RootState) => state.candidates.dataset
 export const selectCandidatesLoading = (state: RootState) => state.candidates.loading
 export const selectCandidatesError = (state: RootState) => state.candidates.error
 export const selectCandidatesUpdatingId = (state: RootState) => state.candidates.updatingId
@@ -115,7 +131,7 @@ export const selectFilteredCandidates = createSelector(
 
     const { sortField, sortDirection } = filters
     const sorted = [...result].sort((a, b) => {
-      let cmp = 0
+      let cmp: number
       if (sortField === 'name') {
         cmp = a.name.localeCompare(b.name, 'ru')
       } else if (sortField === 'total_exp') {

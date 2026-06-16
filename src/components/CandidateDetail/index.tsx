@@ -17,7 +17,6 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
   return (
     <>
       <article className="max-w-3xl mx-auto space-y-8">
-        {/* Header */}
         <header className="bg-white border border-gray-200 rounded-xl p-6">
           <div className="flex flex-wrap items-start gap-3 justify-between mb-1">
             <h1 className="text-2xl font-bold text-gray-900">{candidate.name}</h1>
@@ -25,7 +24,6 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           </div>
           <p className="text-gray-500 text-sm mb-4">{candidate.pos_label}</p>
 
-          {/* Status management */}
           <div className="pt-4 border-t border-gray-100">
             <StatusSelect
               candidateId={candidate.id}
@@ -35,17 +33,14 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           </div>
         </header>
 
-        {/* Contacts */}
         <section className="bg-white border border-gray-200 rounded-xl p-6">
           <ContactInfo candidate={candidate} />
         </section>
 
-        {/* Experience */}
         <section className="bg-white border border-gray-200 rounded-xl p-6">
           <ExperienceSection exp={candidate.exp} totalExp={candidate.total_exp} />
         </section>
 
-        {/* Stack & Education */}
         <section className="bg-white border border-gray-200 rounded-xl p-6 space-y-4">
           <div>
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Стек технологий</h2>
@@ -66,12 +61,10 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           </div>
         </section>
 
-        {/* Criteria */}
         <section className="bg-white border border-gray-200 rounded-xl p-6">
           <CriteriaSection criteria={candidate.criteria} />
         </section>
 
-        {/* Summary */}
         <section className="bg-white border border-gray-200 rounded-xl p-6" aria-labelledby="summary-heading">
           <h2 id="summary-heading" className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
             Summary
@@ -79,7 +72,6 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           <p className="text-sm text-gray-700 leading-relaxed">{candidate.summary}</p>
         </section>
 
-        {/* Questions */}
         <section className="bg-white border border-gray-200 rounded-xl p-6" aria-labelledby="questions-heading">
           <h2 id="questions-heading" className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
             Вопросы для собеседования
