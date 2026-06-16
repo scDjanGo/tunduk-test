@@ -9,3 +9,9 @@
 *::after {
   box-sizing: border-box;
 }
+
+
+
+button, a, select {
+  cursor: pointer;
+}

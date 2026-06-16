@@ -1,5 +1,6 @@
 import type { Candidate } from '../../types/candidate'
 import { CandidateCard } from '../CandidateCard'
+import { CandidateRow } from '../CandidateCard/CandidateRow'
 import { Spinner } from '../UI/Spinner'
 
 interface CandidateListProps {
@@ -31,16 +32,32 @@ export function CandidateList({ candidates, loading }: CandidateListProps) {
 
   return (
     <div>
-      {/* Desktop table header */}
-      <div className="hidden md:grid md:grid-cols-[2fr_1fr_auto_2fr_auto_auto] md:gap-4 px-4 py-2 mb-1">
-        {TABLE_HEADERS.map((h) => (
-          <span key={h} className="text-xs font-medium text-gray-400 uppercase tracking-wide">
-            {h}
-          </span>
-        ))}
+      {/* Desktop layout — real table */}
+      <div className="hidden md:block bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <table className="w-full">
+          <thead>
+            <tr className="bg-gray-50 border-b border-gray-200">
+              {TABLE_HEADERS.map((h) => (
+                <th
+                  key={h}
+                  scope="col"
+                  className="text-left px-4 py-3 text-xs font-medium text-gray-500 uppercase tracking-wide"
+                >
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100">
+            {candidates.map((candidate) => (
+              <CandidateRow key={candidate.id} candidate={candidate} />
+            ))}
+          </tbody>
+        </table>
       </div>
 
-      <div className="flex flex-col gap-2">
+      {/* Mobile layout — card style */}
+      <div className="md:hidden flex flex-col gap-2">
         {candidates.map((candidate) => (
           <CandidateCard key={candidate.id} candidate={candidate} />
         ))}

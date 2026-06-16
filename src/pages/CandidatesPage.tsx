@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../store/redux-hooks'
 import { setFilters, setPage, resetFilters, selectFilters, selectFiltersForUrl } from '../store/filtersSlice'
@@ -34,6 +34,12 @@ export function CandidatesPage() {
   const filters = useAppSelector(selectFilters)
   const filtersForUrl = useAppSelector(selectFiltersForUrl)
   const { items, total, totalPages, page, loading, error } = useCandidates()
+  const listTopRef = useRef<HTMLParagraphElement>(null)
+
+  const handlePageChange = (p: number) => {
+    dispatch(setPage(p))
+    listTopRef.current?.focus()
+  }
 
   // Initialize filters from URL on mount
   useEffect(() => {
@@ -76,7 +82,7 @@ export function CandidatesPage() {
 
         {/* Results count */}
         {!loading && (
-          <p className="text-sm text-gray-400 mb-3">
+          <p ref={listTopRef} tabIndex={-1} className="text-sm text-gray-400 mb-3 focus:outline-none">
             {total === 0
               ? 'Кандидаты не найдены'
               : `Найдено: ${total} ${getCountLabel(total)}`}
@@ -100,7 +106,7 @@ export function CandidatesPage() {
             <Pagination
               page={page}
               totalPages={totalPages}
-              onPageChange={(p) => dispatch(setPage(p))}
+              onPageChange={handlePageChange}
             />
           </div>
         )}

@@ -6,6 +6,7 @@ import type { RootState } from './store'
 
 interface CandidatesState {
   items: Candidate[]
+  loaded: boolean
   loading: boolean
   error: string | null
   updatingId: string | null
@@ -14,6 +15,7 @@ interface CandidatesState {
 
 const initialState: CandidatesState = {
   items: [],
+  loaded: false,
   loading: false,
   error: null,
   updatingId: null,
@@ -48,6 +50,7 @@ const candidatesSlice = createSlice({
       })
       .addCase(loadCandidates.fulfilled, (state, { payload }) => {
         state.loading = false
+        state.loaded = true
         state.items = payload
       })
       .addCase(loadCandidates.rejected, (state, { error }) => {
@@ -81,6 +84,7 @@ export default candidatesSlice.reducer
 
 // --- Base selectors ---
 
+export const selectCandidatesLoaded = (state: RootState) => state.candidates.loaded
 export const selectCandidatesLoading = (state: RootState) => state.candidates.loading
 export const selectCandidatesError = (state: RootState) => state.candidates.error
 export const selectCandidatesUpdatingId = (state: RootState) => state.candidates.updatingId
