@@ -20,8 +20,8 @@ export function FilterPanel() {
             aria-pressed={verdict === v}
             className={`px-3 py-1.5 text-xs rounded-full border transition-colors ${
               verdict === v
-                ? 'bg-indigo-600 text-white border-indigo-600'
-                : 'bg-white text-gray-600 border-gray-200 hover:border-indigo-300 hover:text-indigo-600'
+                ? 'bg-blue-600 text-white border-blue-600'
+                : 'bg-white text-gray-600 border-gray-200 hover:border-blue-300 hover:text-blue-600'
             }`}
           >
             {VERDICT_FILTER_LABELS[v]}

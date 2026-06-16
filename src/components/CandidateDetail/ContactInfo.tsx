@@ -14,7 +14,7 @@ export function ContactInfo({ candidate }: ContactInfoProps) {
         <div>
           <dt className="text-xs text-gray-400">Email</dt>
           <dd className="text-sm">
-            <a href={`mailto:${candidate.email}`} className="text-indigo-600 hover:underline">
+            <a href={`mailto:${candidate.email}`} className="text-blue-600 hover:underline">
               {candidate.email}
             </a>
           </dd>
@@ -36,7 +36,7 @@ export function ContactInfo({ candidate }: ContactInfoProps) {
               href={`https://t.me/${candidate.tg.replace('@', '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
+              className="text-blue-600 hover:underline"
             >
               {candidate.tg}
             </a>

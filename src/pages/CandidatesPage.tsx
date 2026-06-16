@@ -71,43 +71,51 @@ export function CandidatesPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
-          <div>
-            <h1 className="text-2xl font-bold text-gray-900">Candidate Dashboard</h1>
-            <p className="text-sm text-gray-400 mt-0.5">React — ведущий программист</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <div role="group" aria-label="Размер набора данных" className="flex text-sm border border-gray-200 rounded-lg overflow-hidden">
-              <button
-                onClick={() => handleDatasetChange('small')}
-                aria-pressed={dataset === 'small'}
-                className={`px-3 py-1.5 transition-colors ${
-                  dataset === 'small' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-500 hover:bg-gray-50'
-                }`}
+      <div className="bg-linear-to-br from-blue-700 via-blue-600 to-blue-500">
+        <div className="max-w-6xl mx-auto px-4 py-8 pb-16">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <h1 className="text-2xl font-bold text-white">Candidate Dashboard</h1>
+              <p className="text-sm text-blue-100 mt-0.5">React — ведущий программист</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <div
+                role="group"
+                aria-label="Размер набора данных"
+                className="flex text-sm border border-white/30 rounded-lg overflow-hidden bg-white/10"
               >
-                25
-              </button>
+                <button
+                  onClick={() => handleDatasetChange('small')}
+                  aria-pressed={dataset === 'small'}
+                  className={`px-3 py-1.5 transition-colors ${
+                    dataset === 'small' ? 'bg-white text-blue-700 font-medium' : 'text-blue-50 hover:bg-white/10'
+                  }`}
+                >
+                  25
+                </button>
+                <button
+                  onClick={() => handleDatasetChange('large')}
+                  aria-pressed={dataset === 'large'}
+                  className={`px-3 py-1.5 transition-colors border-l border-white/30 ${
+                    dataset === 'large' ? 'bg-white text-blue-700 font-medium' : 'text-blue-50 hover:bg-white/10'
+                  }`}
+                >
+                  120
+                </button>
+              </div>
               <button
-                onClick={() => handleDatasetChange('large')}
-                aria-pressed={dataset === 'large'}
-                className={`px-3 py-1.5 transition-colors border-l border-gray-200 ${
-                  dataset === 'large' ? 'bg-indigo-600 text-white' : 'bg-white text-gray-500 hover:bg-gray-50'
-                }`}
+                onClick={() => dispatch(resetFilters())}
+                className="text-sm text-blue-50 hover:text-white border border-white/30 rounded-lg px-3 py-1.5 hover:bg-white/10 transition-colors"
               >
-                120
+                Сбросить фильтры
               </button>
             </div>
-            <button
-              onClick={() => dispatch(resetFilters())}
-              className="text-sm text-gray-500 hover:text-gray-700 border border-gray-200 rounded-lg px-3 py-1.5 hover:border-gray-300 transition-colors"
-            >
-              Сбросить фильтры
-            </button>
           </div>
         </div>
+      </div>
 
-        <div className="bg-white border border-gray-200 rounded-xl p-4 mb-4 space-y-3">
+      <div className="max-w-6xl mx-auto px-4 pb-8 -mt-10">
+        <div className="bg-white border border-gray-200 shadow-md rounded-xl p-4 mb-4 space-y-3">
           <div className="flex gap-3 items-center flex-wrap">
             <SearchBar />
           </div>
@@ -119,7 +127,7 @@ export function CandidatesPage() {
             {total === 0
               ? 'Кандидаты не найдены'
               : `Найдено: ${total} ${getCountLabel(total)}`}
-            {filters.search && <span className="text-indigo-500"> · поиск: «{filters.search}»</span>}
+            {filters.search && <span className="text-blue-500"> · поиск: «{filters.search}»</span>}
           </p>
         )}
 

@@ -40,7 +40,7 @@ export function CandidateList({ candidates, loading }: CandidateListProps) {
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-24 gap-3 text-gray-400">
-        <Spinner size="lg" />
+        <Spinner size="lg" className="text-blue-600" />
         <p className="text-sm">Загрузка кандидатов...</p>
       </div>
     )
@@ -57,8 +57,8 @@ export function CandidateList({ candidates, loading }: CandidateListProps) {
   }
 
   return (
-    <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-      <div ref={scrollRef} className="max-h-160 overflow-auto">
+    <div className="bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden">
+      <div ref={scrollRef} className="">
         <table className="w-full">
           <thead className="hidden md:table-header-group">
             <tr className="bg-gray-50 border-b border-gray-200">

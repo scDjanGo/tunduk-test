@@ -2,11 +2,11 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { lazy } from 'react'
 
 const CandidatesPage = lazy(() =>
-  import("./pages/CandidatesPage").then(module => ({ default: module.CandidatesPage }))
+  import('./pages/CandidatesPage').then((module) => ({ default: module.CandidatesPage })),
 )
-// import { CandidatesPage } from './pages/CandidatesPage'
-const  CandidateDetailPage  = lazy(() => import('./pages/CandidateDetailPage').then(module =>({default: module.CandidateDetailPage})))
-// import { CandidateDetailPage } from './pages/CandidateDetailPage'
+const CandidateDetailPage = lazy(() =>
+  import('./pages/CandidateDetailPage').then((module) => ({ default: module.CandidateDetailPage })),
+)
 
 export function AppRoutes() {
   return (

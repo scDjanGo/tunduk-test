@@ -21,7 +21,7 @@ export function Pagination({ page, totalPages, onPageChange }: PaginationProps) 
 
   const btnBase = 'min-w-9 h-9 flex items-center justify-center rounded-md text-sm transition-colors'
   const btnDefault = 'text-gray-600 hover:bg-gray-100'
-  const btnActive = 'bg-indigo-600 text-white font-medium'
+  const btnActive = 'bg-blue-600 text-white font-medium'
   const btnDisabled = 'opacity-40 cursor-not-allowed'
 
   return (

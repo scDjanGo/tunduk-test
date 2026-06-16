@@ -40,7 +40,7 @@ export function StatusSelect({ candidateId, currentStatus, onToast }: StatusSele
           onChange={handleChange}
           disabled={isUpdating}
           aria-busy={isUpdating}
-          className="appearance-none pl-3 pr-10 py-2 text-sm border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:opacity-60 disabled:cursor-not-allowed"
+          className="appearance-none pl-3 pr-10 py-2 text-sm border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {STATUS_FLOW.map((s) => (
             <option key={s} value={s}>
@@ -50,7 +50,7 @@ export function StatusSelect({ candidateId, currentStatus, onToast }: StatusSele
         </select>
         {isUpdating && (
           <div className="absolute inset-y-0 right-3 flex items-center">
-            <Spinner size="sm" className="text-indigo-600" />
+            <Spinner size="sm" className="text-blue-600" />
           </div>
         )}
         {!isUpdating && (

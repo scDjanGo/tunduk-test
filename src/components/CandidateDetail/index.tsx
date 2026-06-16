@@ -17,7 +17,7 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
   return (
     <>
       <article className="max-w-3xl mx-auto space-y-8">
-        <header className="bg-white border border-gray-200 rounded-xl p-6">
+        <header className="bg-white border border-gray-200 shadow-sm rounded-xl p-6">
           <div className="flex flex-wrap items-start gap-3 justify-between mb-1">
             <h1 className="text-2xl font-bold text-gray-900">{candidate.name}</h1>
             <VerdictBadge verdict={candidate.verdict} vc={candidate.vc} />
@@ -33,15 +33,15 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           </div>
         </header>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6">
           <ContactInfo candidate={candidate} />
         </section>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6">
           <ExperienceSection exp={candidate.exp} totalExp={candidate.total_exp} />
         </section>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6 space-y-4">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6 space-y-4">
           <div>
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">Стек технологий</h2>
             <div className="flex flex-wrap gap-1.5">
@@ -61,18 +61,18 @@ export function CandidateDetail({ candidate }: CandidateDetailProps) {
           </div>
         </section>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6">
           <CriteriaSection criteria={candidate.criteria} />
         </section>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6" aria-labelledby="summary-heading">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6" aria-labelledby="summary-heading">
           <h2 id="summary-heading" className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
             Summary
           </h2>
           <p className="text-sm text-gray-700 leading-relaxed">{candidate.summary}</p>
         </section>
 
-        <section className="bg-white border border-gray-200 rounded-xl p-6" aria-labelledby="questions-heading">
+        <section className="bg-white border border-gray-200 shadow-sm rounded-xl p-6" aria-labelledby="questions-heading">
           <h2 id="questions-heading" className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
             Вопросы для собеседования
           </h2>

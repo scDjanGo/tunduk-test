@@ -40,7 +40,7 @@ export function CandidateDetailPage() {
     return (
       <main className="min-h-screen bg-slate-50 flex items-center justify-center">
         <div className="flex flex-col items-center gap-3 text-gray-400">
-          <Spinner size="lg" />
+          <Spinner size="lg" className="text-blue-600" />
           <p className="text-sm">Загрузка...</p>
         </div>
       </main>
@@ -56,7 +56,7 @@ export function CandidateDetailPage() {
           <p className="text-gray-400 text-sm mb-6">Возможно, профиль был удалён или ссылка неверная</p>
           <button
             onClick={handleBack}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 transition-colors"
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition-colors"
           >
             ← Вернуться к списку
           </button>
@@ -67,15 +67,19 @@ export function CandidateDetailPage() {
 
   return (
     <main className="min-h-screen bg-slate-50">
-      <div className="max-w-3xl mx-auto px-4 py-8">
-        <button
-          onClick={handleBack}
-          className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-800 mb-6 group transition-colors"
-        >
-          <span className="group-hover:-translate-x-0.5 transition-transform">←</span>
-          Назад к списку
-        </button>
+      <div className="bg-linear-to-br from-blue-700 via-blue-600 to-blue-500">
+        <div className="max-w-3xl mx-auto px-4 py-6">
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-2 text-sm text-blue-50 hover:text-white group transition-colors"
+          >
+            <span className="group-hover:-translate-x-0.5 transition-transform">←</span>
+            Назад к списку
+          </button>
+        </div>
+      </div>
 
+      <div className="max-w-3xl mx-auto px-4 py-8">
         <CandidateDetail candidate={candidate} />
       </div>
     </main>

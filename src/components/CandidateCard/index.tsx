@@ -32,7 +32,7 @@ export const CandidateCard = memo(function CandidateCard({ candidate }: Candidat
       role="button"
       tabIndex={0}
       aria-label={`Открыть карточку кандидата ${candidate.name}`}
-      className="cursor-pointer bg-white hover:bg-indigo-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+      className="cursor-pointer bg-white hover:bg-blue-50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
     >
       {/* Desktop cells */}
       <td className="hidden md:table-cell px-4 py-3.5 align-middle">
